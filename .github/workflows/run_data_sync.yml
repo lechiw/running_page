@@ -2,11 +2,12 @@ name: Build and Deploy
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 0 * * *'
   push:
     branches:
       - master
+
+env:
+  PATH_PREFIX: /running_page
 
 jobs:
   build:

@@ -30,7 +30,7 @@ const MAP_LAYER_LIST = [
 // styling: set to `true` if you want dash-line route
 const USE_DASH_LINE = true;
 // styling: route line opacity: [0, 1]
-const LINE_OPACITY = 0.4;
+const LINE_OPACITY = 0.6;
 // styling: map height - responsive design
 // Use smaller height on mobile devices for better user experience
 const MAP_HEIGHT = window.innerWidth <= 768 ? 250 : 600;
@@ -230,7 +230,7 @@ export const MAP_TILE_VENDOR = 'mapcn_openfreemap';
 
 // map tiles style name, see MAP_TILE_STYLES for more details
 export const MAP_TILE_STYLE_LIGHT = 'osm-bright';
-export const MAP_TILE_STYLE_DARK = 'dark-matter';
+export const MAP_TILE_STYLE_DARK = 'osm-bright';
 
 // access token. you can apply a new one, it's free.
 // maptiler: Gt5R0jT8tuIYxW6sNrAg | sign up at https://cloud.maptiler.com/auth/widget

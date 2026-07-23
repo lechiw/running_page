@@ -1,4 +1,3 @@
-import MapboxLanguage from '@mapbox/mapbox-gl-language';
 import React, {
   useRef,
   useCallback,

@@ -1,3 +1,4 @@
+import MapboxLanguage from '@mapbox/mapbox-gl-language';
 import React, {
   useRef,
   useCallback,
@@ -252,7 +253,7 @@ const RunMap = ({
       if (ref !== null) {
         const map = ref.getMap();
         if (map && IS_CHINESE) {
-          // map.addControl(new MapboxLanguage({ defaultLanguage: 'zh-Hans' })); // disabled - use tile server labels
+          map.addControl(new MapboxLanguage({ defaultLanguage: 'zh-Hans' })); // disabled - use tile server labels
         }
         // all style resources have been downloaded
         // and the first visually complete rendering of the base style has occurred.
